@@ -4,3 +4,4 @@ venv/
 artifacts/pickle/
 src/__pycache__/
 src/components/__pycache__/
+Stroke_Prediction.egg-info/
