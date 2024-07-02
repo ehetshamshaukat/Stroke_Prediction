@@ -10,7 +10,6 @@ def get_packages(file_path)-> List[str]:
         if hypen_e in requirements:
             requirements.remove(hypen_e)
 
-
     return requirements
 
 
@@ -19,6 +18,6 @@ setup(
     version="0.1",
     author="ehetsham",
     author_email="ehetsham.s@gmail.com",
-    packages=find_packages()
+    packages=find_packages(),
     install_requires=get_packages("requirements.txt")
 )

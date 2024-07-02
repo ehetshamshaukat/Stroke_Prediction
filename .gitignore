@@ -1,4 +1,6 @@
 .DS_Store
 .idea/
 venv/
-artifacts/pickle
+artifacts/pickle/
+src/__pycache__/
+src/components/__pycache__/

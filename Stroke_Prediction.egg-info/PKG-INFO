@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Stroke_Prediction
+Version: 0.1
+Author: ehetsham
+Author-email: ehetsham.s@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: streamlit
