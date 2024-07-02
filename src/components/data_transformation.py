@@ -49,6 +49,9 @@ class DataTransformation:
                 train_dataset[col].replace([0, 1], ["no", "yes"], inplace=True)
                 test_dataset[col].replace([0, 1], ["no", "yes"], inplace=True)
 
+
+            train_dataset = train_dataset.drop(train_dataset[train_dataset["gender"]=="other"].index)
+
             target_column = "stroke"
             column_to_drop = ["id", "stroke"]
 

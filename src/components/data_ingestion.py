@@ -16,7 +16,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             df=pd.read_csv("dataset/stroke-data.csv")
-            train_dataset_path,test_dataset_path=train_test_split(df,test_size=0.2)
+            train_dataset_path,test_dataset_path=train_test_split(df,test_size=0.2,random_state=69)
             os.makedirs(os.path.dirname(self.dataset_path.train_dataset_path),exist_ok=True)
             train_dataset_path.to_csv(self.dataset_path.train_dataset_path,index=False,header=True)
             test_dataset_path.to_csv(self.dataset_path.test_dataset_path,index=False,header=True)
