@@ -1,5 +1,6 @@
 from src.utils import load_pickle_file
 import os
+import pandas as pd
 
 
 class Prediction:
