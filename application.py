@@ -1,6 +1,8 @@
 import streamlit as st
 from src.pipeline.prediction_pipeline import Features,Prediction
 
+
+st.header("Stroke Prediction")
 gender=st.selectbox("please select gender",["Male","Female"])
 age=st.number_input("please enter age",value=0)
 hypertension=st.selectbox("please enter if you have hyper tension",["yes","no"])
@@ -26,6 +28,6 @@ if ok:
     pred=Prediction()
     result=pred.initiate_prediction(feature_to_df)
     if result == 0:
-        st.write("Congrat! Lung Cancer not detected")
+        st.write("Congrat! Stroke not detected")
     else:
-        st.write("Sorry, Lung Cancer detected")
+        st.write("Sorry, Stroke detected")
